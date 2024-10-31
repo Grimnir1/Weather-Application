@@ -2,7 +2,7 @@ const showInfo = () => {
     const cityElement = document.getElementById('cityElement');
     const city = cityElement.value;
     const apiKey = "79e74fc44d65c9541e6861c0c7e62270";
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
     fetch(url)
         .then(response => response.json())
