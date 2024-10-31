@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('Images/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.first{
+    width: 66%;
+    height: 100vh;
+}
+.second{
+    width: 34%;
+    height: 100vh;
+    background-color: rgba(3, 3, 3,0.4);
+}
+.bottom-border-input {
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+
+.bottom-border-input::placeholder {
+    color: white;
+}
+.three{
+    font-size: 200px;
+}
+.four{
+    width: 100%;
+}
+.white-line {
+    border: none; 
+    height: 1px; 
+    background-color: white; 
+}
+.displ{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+@media screen and (max-width: 800px){
+    body{
+        background-image: url('Images/pexels-bradanton-25911998.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        height: 120vh;
+    }
+    .first{
+        width: 66%;
+        height: 100vh;
+    }
+    .second{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(3, 3, 3,0.4);
+        backdrop-filter: blur(100px);
+        height: 110vh;
+    }
+    .bottom-border-input {
+        border-bottom: 2px solid white; 
+    }
+    .three{
+        font-size: 150px;
+    }
+    .four{
+        width: 100%;
+    }
+}
