@@ -54,6 +54,8 @@ body{
 @media screen and (max-width: 800px){
     body{
         background-image: url('Images/pexels-bradanton-25911998.jpg');
+        /* background-image: url('Images/drizzle.jpg'); */
+
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;

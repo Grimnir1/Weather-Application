@@ -28,6 +28,7 @@ document.getElementById('cityElement').addEventListener('input', function() {
                 
                 let locName = result.name
                 let weatherDes = result.weather[0].description
+                let mainWeatherDes = result.weather[0].main
                 let country = result.sys.country
                 let humidity = result.main.humidity
                 let Wind = result.wind.speed
@@ -35,19 +36,68 @@ document.getElementById('cityElement').addEventListener('input', function() {
                 let iconURL = `http://openweathermap.org/img/w/${icon}.png`
 
 
-                switch (weatherDes) {
-                    case 'clear sky':
-                        
-                        break;
-                
+                switch (mainWeatherDes) {
+                    case 'Clouds':
+                        // alert("Clouds")
+                        document.body.style.background = "url('Images/clouds.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                        document.body.style.color = "gold";
+                    break;
+                    case 'Clear':
+                        document.body.style.background = "url('Images/drizzle.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Rain':
+                        document.body.style.background = "url('Images/rain.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Thunderstorm':
+                        document.body.style.background = "url('Images/ThunderStorm.jpeg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Drizzle':
+                        document.body.style.background = "url('Images/drizzle.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Snow':
+                        document.body.style.background = "url('Images/snow.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Mist':
+                        document.body.style.background = "url('Images/mist.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'maze':
+                        document.body.style.background = "url('Images/haze.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Dust':
+                        document.body.style.background = "url('Images/dust.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Fog':
+                        document.body.style.background = "url('Images/fog.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Sand':
+                        document.body.style.background = "url('Images/sand.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Ash':
+                        document.body.style.background = "url('Images/ash.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Squall':
+                        document.body.style.background = "url('Images/squall.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
+                    case 'Tornado':
+                        document.body.style.background = "url('Images/tornado.jpg') no-repeat ";
+                        document.body.style.backgroundSize = "cover";
+                    break;
                     default:
                         break;
                 }
-                
-                
-                // if(weatherDes == "clear sky" ){
-                    document.body.style.background = "#f3f3f3 url('Images/pexels-bradanton-25911998.jpg') no-repeat ";
-                    document.body.style.backgroundSize = "cover";
                     locationName.innerHTML = `
                         <h1 class="three">${temp}°C</h1>
                         <h2>${locName}, ${country}</h2>
