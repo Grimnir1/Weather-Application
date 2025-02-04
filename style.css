@@ -48,6 +48,9 @@ body{
     padding: 5px;
     align-items: center;
 }
+/* .weatherDescription{
+    display: flex;
+} */
 @media screen and (max-width: 800px){
     body{
         background-image: url('Images/pexels-bradanton-25911998.jpg');
